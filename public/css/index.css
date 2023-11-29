@@ -1,0 +1,32 @@
+body {
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mainheading {
+    margin:90px;
+color: white;
+}
+
+.buttonregister,
+.button {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 12%;
+    margin: 20px;
+}
+
+.buttonregister:hover,
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

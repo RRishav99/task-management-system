@@ -1,0 +1,48 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+
+.name,.Empid{
+    color: #f8f9fa;
+}
+
+.page-wrapper {
+    background-color: #f8f9fa;
+}
+
+.title{
+    color: #f8f9fa;
+}
+
+.card-5 {
+    background-color: black;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 80px;
+}
+
+.input--style-5 {
+    width: 33%;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btn--radius-2 {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 12%;
+}
+
+
+
+.btn--radius-2:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}

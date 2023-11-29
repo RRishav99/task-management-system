@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="./css/userDashboard.css">
+    
+
+</head>
+
+<body>
+  <h1>My Dashboard</h1>
+  <button id="logoutBtn">Logout</button>
+  <table id="taskTable">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Description</th>     
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Task Update</th> 
+      </tr>
+    </thead>
+    <tbody id="taskTableBody"></tbody>
+  </table>
+
+  <div style="border:#333;">
+    <!-- Notification popup -->
+    <div id="notificationPopup" style="display: none;">
+      <h3 id="notificationTitle"></h3>
+      <p id="notificationMessage"></p>
+      <button id="OK"  onclick="window.location.reload();">OK</button>
+    </div>
+  </div>
+  <script src="./js/userDashboard.js"></script>
+</body>
+
+</html>

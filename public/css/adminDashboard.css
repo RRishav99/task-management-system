@@ -1,0 +1,208 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sidebar styles */
+nav {
+  background: linear-gradient(0deg, black, #444444);
+    margin: 20px;
+  border-radius: 15px;
+  box-shadow: greenyellow 0px 2px 4px 0px, greenyellow 0px 2px 16px 0px;
+  display: block;
+  padding: 30px;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Main content styles */
+main {
+  margin-left: 220px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+/* Task Table styles */
+#taskTable {
+  width: calc(100% - 320px);
+  margin: 20px 20px 20px 20px;
+  border-collapse: collapse;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  
+}
+
+button{
+  background-color: wheat;
+}
+
+#searchInput ,
+#searchButton{
+  width: 100%;
+  margin: 20px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: aquamarine;
+}
+
+#taskTable th,
+#taskTable td {
+  padding: 15px;
+  border: 1px solid #444;
+  text-align: left;
+  color: #fff;
+}
+
+#taskTable th {
+  /* background-color: #555; */
+  background-color: #03131e;
+}
+
+#taskTable td{
+  background-color: #0c202ee0;
+}
+
+#createTaskLink, #allTask{
+  background-color: #459568;
+}
+/* Create Task Form styles */
+#createTaskForm, #editTaskForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 33%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#editTaskTitle, #editTaskDescription, #editTaskPriority, #editTaskAssignedTo{
+  margin: 12px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(52, 129, 84);
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigation link styles */
+nav a, #createTaskLink, #currentTaskLink, #completedTaskLink, #searchTaskLink {
+  cursor: pointer;
+  color: #fff;
+  background-color: #444;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover, #createTaskLink:hover, #currentTaskLink:hover, #completedTaskLink:hover, #searchTaskLink:hover {
+  background-color: #555;
+}
+
+/* Search form styles */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* Logout button styles */
+#logoutBtn {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+  background-color: #d32f2f;
+}
+
+
+
+
+
+.icon-arrow {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 1.4px solid transparent;
+ 
+  text-align: center;
+  font-size: 1rem;
+ 
+  margin-left: .5rem;
+  transition: .2s ease-in-out;
+}
+
+
+#createTaskForm.active,
+#editTaskForm.active {
+  display: block;
+}
+
+/* Add the following styles to hide the table when the form is active */
+#taskTable.active {
+  display: none;
+}
+
+
+
+
+
+
+
+
